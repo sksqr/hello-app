@@ -6,6 +6,11 @@ pipeline {
 //         SONARQUBE_CREDENTIALS = 'sonarqube-token' // Add credentials in Jenkins and use its ID
 //     }
 
+ tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "mvn3.9.9"
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
