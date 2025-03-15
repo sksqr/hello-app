@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello(){
-        return "Hello JBDL - "+Thread.currentThread().getName();
+        return "Hello JBDL-79 - "+Thread.currentThread().getName();
     }
 }
